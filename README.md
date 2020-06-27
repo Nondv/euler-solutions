@@ -1,4 +1,5 @@
 # euler-solutions
+<img src='https://projecteuler.net/profile/nondv.png' />
 
 So I managed to lose all of my solutions (in multiple languages!!!) by acciidentally deleting the .org file containing them.
 
