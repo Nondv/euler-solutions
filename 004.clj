@@ -4,17 +4,14 @@
 
 ;; Find the largest palindrome made from the product of two 3-digit numbers.
 
-(defn digits [n]
-  (loop [x n, result '()]
-    (if (= x 0)
-      result
-      (recur (quot x 10) (conj result (mod x 10))))))
+(load-file "000-utils.clj")
+
 
 (def largest (* 999 999))
 (def lowest (* 100 100))
 
 (defn is-palindrome? [x]
-  (->> (digits x)
+  (->> (utils/digits x)
        (#(= % (reverse %)))))
 
 (def products
